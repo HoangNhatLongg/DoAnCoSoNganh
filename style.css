@@ -7,3 +7,26 @@ div > #silde1 > img{
   width: 500px;
   height: 250px;
 }
+
+.navbar-nav > li > .dropdown-menu {
+    transition: all 0.3s ease;
+    border-radius: 8px;           /* bo góc mềm */
+    padding: 5px 0;               /* khoảng cách trên dưới */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* đổ bóng nhẹ */
+}
+
+.navbar-nav > li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu > li > a {
+    padding: 10px 20px;          /* rộng rãi */
+    transition: background 0.3s, color 0.3s, padding-left 0.3s;
+}
+
+/* Hiệu ứng hover từng item */
+.dropdown-menu > li > a:hover {
+    background: #222;            /* nền tối hơn (hoặc đổi theo ý bạn) */
+    color: #ffd700;              /* chữ vàng ánh kim cho nổi */
+    padding-left: 25px;          /* hơi trượt sang phải khi hover */
+}
