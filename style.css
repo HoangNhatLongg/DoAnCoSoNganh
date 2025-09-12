@@ -1,0 +1,9 @@
+#navbar1 a:hover{
+    background-color: gray; /* màu nền khi hover */
+  color: #fff !important; 
+}
+
+div > #silde1 > img{
+  width: 500px;
+  height: 250px;
+}
