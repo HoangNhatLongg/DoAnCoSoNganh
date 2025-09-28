@@ -1,8 +1,17 @@
 /*      */
+body {
+  padding-top: 70px;
+}
+
 .navbar-custom {
   background: #ffffff; /* nền trắng */
   border: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* bóng mờ nhẹ */
+  position: fixed;   /* cố định trên cùng */
+  top: 0;
+  left: 0;
+  width: 100%;       /* full chiều ngang */
+  z-index: 9999;     /* nổi lên trên cùng */
 }
 
 .navbar-custom .navbar-brand {
