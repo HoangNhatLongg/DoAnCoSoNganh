@@ -52,7 +52,7 @@ form input{
 form a{
     text-align: center;
     font-size: 14px;
-    color:black
+    color:black;
 }
 form a:hover{
     color:red;
@@ -97,7 +97,7 @@ form button{
     color:black;
 }
 .social-button button#gg{
-    background-color: white;
+    background-color: whitex;
     color:black;
 }
 .social-button button:hover{
@@ -109,9 +109,9 @@ form button{
     text-align: center;
 }
 #dangnhap a{
-    color: black;
+    color: wheat;
 }
 
 #dangnhap a:hover{
-    color: red;
+    color: #5f89e2;
 }

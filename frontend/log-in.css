@@ -54,7 +54,7 @@ form a{
     color:black
 }
 form a:hover{
-    color: brown;
+    color: wheat;
 }
 form button{
     border: none;
@@ -110,10 +110,13 @@ form button{
     display: flex;
     gap: 20px;
 }
+#taotk p{
+    color: whitesmoke;
+}
 #taotk a{
-    color: black;
+    color: whitesmoke;
 }
 
 #taotk a:hover{
-    color: brown;
+    color: rgb(189, 152, 83);
 }
