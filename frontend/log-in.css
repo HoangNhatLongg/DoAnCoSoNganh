@@ -12,17 +12,19 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f0f0f0;
+    background-image: url("Images/wallhaven-gpddld_1920x1080.png");
+    background-size: 100vw 100vh;
 }
 
 .container{
     position: relative;
     width: 460px;
     height: 500px;
-    border-radius: 12px;
+    border-radius: 20px;
     padding: 20px 30px 120px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.628);
     overflow: hidden;
+    backdrop-filter: blur(6px);
 }
 
 .dangnhap header{
@@ -52,7 +54,7 @@ form a{
     color:black
 }
 form a:hover{
-    color:red;
+    color: brown;
 }
 form button{
     border: none;
@@ -113,5 +115,5 @@ form button{
 }
 
 #taotk a:hover{
-    color: red;
+    color: brown;
 }
