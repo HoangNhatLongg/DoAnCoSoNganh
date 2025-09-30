@@ -46,7 +46,7 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Vinfast <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">VinFast <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Động cơ xăng</a></li>
                             <li class="divider"></li>
@@ -99,7 +99,7 @@
    <div class="container">
   <div class="row">
     <!-- Bên trái -->
-    <div class="col-md-8">
+    <div class="col-md-8 left-content">
       <h2><b>Đăng ký lái thử các hãng xe tại LuxCar</b></h2>
       <p>Lái thử và cảm nhận các dòng xe tại Đại lý LuxCar Bình Dương...</p>
       <ul>
@@ -111,12 +111,81 @@
         <p><i class="glyphicon glyphicon-earphone"></i> Hotline kinh doanh: <a href="tel:0900090090">0900 090 090</a></p>
         <p><i class="glyphicon glyphicon-globe"></i> Website: luxurycar.com</p>
         <p><i class="glyphicon glyphicon-map-marker"></i> Showroom 1: 123 Lê Lợi, TP. HCM</p>
-        <p><i class="glyphicon glyphicon-envelope"></i> support@luxurycar.vn</p>
+        <p><i class="glyphicon glyphicon-envelope"></i> support@luxurycar.vn</p> <hr>
+
+        <h3><b>Đăng ký lái thử xe LuxCar tháng 09/2025</b></h3>
+        <p>
+            Vui lòng để lại thông tin bên dưới, Đại lý LuxCar Bình Dương sẽ xác nhận đăng ký và phản hồi trong thời gian sớm nhất..!
+        </p>
+
+        <form class="testdrive-form">
+            <div class="row">
+            <div class="col-sm-4">
+                <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input type="text" class="form-control" placeholder="Họ & Tên *">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                <input type="text" class="form-control" placeholder="Số điện thoại *">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                <select class="form-control">
+                    <option>Tỉnh/ Thành phố</option>
+                    <option>Hà Nội</option>
+                    <option>Hồ Chí Minh</option>
+                    <option>Bình Dương</option>
+                </select>
+                </div>
+            </div>
+            </div>
+
+            <div class="row">
+            <div class="col-sm-4">
+                <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-road"></i></span>
+                <select class="form-control">
+                    <option>Dòng xe lái thử</option>
+                    <option>VinFast VF6</option>
+                    <option>VinFast VF7</option>
+                    <option>VinFast VF8</option>
+                    <option>VinFast VF9</option>
+                    <option>Toyota</option>
+                    <option>Ford</option>
+                </select>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                <input type="date" class="form-control">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+                <select class="form-control">
+                    <option>Buổi sáng</option>
+                    <option>Buổi chiều</option>
+                </select>
+                </div>
+            </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit">
+             Đăng ký lái thử
+            </button>
+        </form>
     </div>
 
     <!-- Bên phải -->
-    <div class="col-md-4">
-      <div class="luxcar-box">
+    <div class="col-md-4 right-sidebar">
+      <div class="luxcar-box sticky-sidebar">
         <!-- Banner -->
         <img src="Images/banner_dat_lich.jpg" class="img-responsive" alt="LuxCar Banner">
 
@@ -157,6 +226,8 @@
               <option>VinFast VF7</option>
               <option>VinFast VF8</option>
               <option>VinFast VF9</option>
+              <option>Toyota</option>
+              <option>Ford</option>
             </select>
           </div>
 
@@ -284,6 +355,68 @@
         .col-md-8 i{
             color:blue;
         }
+        /* Ngăn cách giữa bên trái và bên phải */
+        .left-content {
+        border-right: 2px dashed #ccc;   /* gạch ngăn cách */
+        padding-right: 20px;             /* tạo khoảng cách */
+        }
+
+        .right-sidebar {
+        padding-left: 20px;              /* khoảng cách so với border */
+        }
+
+        /* Responsive: bỏ đường ngăn cách trên mobile */
+        @media (max-width: 767px) {
+            .left-content {
+                border-right: none;
+                padding-right: 0;
+            }
+            .right-sidebar {
+                padding-left: 0;
+            }
+        }
+        .sticky-sidebar {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 20px; /* cách mép trên khi cuộn */
+        }
+
+        /* Form đăng ký lái thử */
+        .testdrive-form .row {
+            margin-bottom: 15px;
+        }
+
+        .testdrive-form .input-group-addon {
+            background: #fff;
+            border-right: none;
+        }
+
+        .testdrive-form .form-control {
+            border-left: none;
+            box-shadow: none;
+            border-radius: 25px;
+        }
+
+        .testdrive-form .input-group {
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+        .testdrive-form .btn-submit {
+            display: inline-block;
+            background: #0066ff;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .testdrive-form .btn-submit:hover {
+            background: #a50909d6;
+        }
+
     </style>
 </body>
 </html>
