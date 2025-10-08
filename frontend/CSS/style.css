@@ -17,11 +17,11 @@ body {
   background: #ffffff; /* nền trắng */
   border: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* bóng mờ nhẹ */
-  position: fixed;   /* cố định trên cùng */
+  position: fixed; /* cố định trên cùng */
   top: 0;
   left: 0;
-  width: 100%;       /* full chiều ngang */
-  z-index: 9999;     /* nổi lên trên cùng */
+  width: 100%; /* full chiều ngang */
+  z-index: 9999; /* nổi lên trên cùng */
 }
 
 .navbar-custom .navbar-brand {
@@ -39,13 +39,27 @@ body {
   transition: 0.3s;
 }
 
-/* Hover: chữ đỏ, đậm, to hơn */
 .navbar-custom .nav > li > a:hover,
 .navbar-custom .nav > li.active > a {
   color: #e53935 !important; /* đỏ */
   font-weight: bold;
   font-size: 16px;
-  background-color: transparent !important; /* không đổi nền */
+  background-color: transparent !important;
+}
+
+.navbar-custom .nav > li > a::after,
+.navbar-custom .nav > li.active > a {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #e53935;
+  display: block;
+  transition: 0.5s;
+}
+
+.navbar-custom .nav > li > a:hover::after,
+.navbar-custom .nav > li.active > a {
+  width: 100%;
 }
 
 /* Dropdown menu */

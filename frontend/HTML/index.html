@@ -372,6 +372,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
@@ -414,47 +415,26 @@
                     </div>
                 </div>
             </div>
+        
+            <div>
+                <h2>🚗 Danh sách xe</h2>
+    <ul id="car-list"></ul>
 
-            <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
-                <div class="flipper">
-                    <div class="flip__front">
-                        <div class="b-goods__img">
-                            <a href="/vios-1-5e-5mt" title="Vios 1.5E 5MT">
-                                <img src="//bizweb.dktcdn.net/thumb/large/100/357/395/products/xe-toyota-vios-2018-khuyen-mai-1.jpg?v=1561384758337" alt="Vios 1.5E 5MT">
-                            </a>
-                        </div>
-                        <div class="b-goods__inner">
-                            <div class="b-goods__name"><a href="/vios-1-5e-5mt">Vios 1.5E 5MT</a></div>
-                            <hr>
-                            <div class="b-goods__footer">
-                                <div class="b-goods__price">
-                                    <span class="new-price">531.000.000₫</span>
-                                </div>
-                                <ul class="b-goods-descr list-unstyled">
-                                    <li class="b-goods-descr__item">
-                                        <figure class="tag_icon">
-                                             <img src="../Images/tag_icon_1.svg" alt="̀2019"> 
-                                             <figcaption>2019</figcaption> 
-                                        </figure>
-                                    </li>
-                                    <li class="b-goods-descr__item">
-                                        <figure class="tag_icon">
-                                             <img src="../Images/tag_icon_2.svg" alt="̀5 chỗ"> 
-                                             <figcaption>5 chỗ</figcaption> 
-                                        </figure>
-                                    </li>
-                                    <li class="b-goods-descr__item">
-                                        <figure class="tag_icon">
-                                             <img src="../Images/tag_icon_3.svg" alt="̀Số sàn"> 
-                                             <figcaption>Số sàn</figcaption> 
-                                        </figure>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <script>
+      fetch("http://localhost:8000/api/cars")
+        .then((res) => res.json())
+        .then((data) => {
+          const ul = document.getElementById("car-list");
+          data.forEach((car) => {
+            const li = document.createElement("li");
+            li.textContent = `${car.TenXe} — Giá: ${car.Gia} VND`;
+            ul.appendChild(li);
+          });
+        })
+        .catch((err) => console.error("❌ Lỗi tải dữ liệu:", err));
+    </script>
             </div>
+
 
         </div> 
         

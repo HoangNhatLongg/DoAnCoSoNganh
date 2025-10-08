@@ -1,155 +1,281 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css" />
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Đặt Lịch</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar navbar-default navbar-custom">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html"><b>Luxury Car</b></a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar1">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Trang chủ</a></li>
-                    <li><a href="gioithieu.html">Giới Thiệu</a></li>
-                    <li><a href="lienhe.html">Liên hệ</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Toyota <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">SUV</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Sedan</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Pickup</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Ford <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">SUV</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Thương mại</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">VinFast <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Động cơ xăng</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Động cơ điện</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Người dùng <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="sign-up.html"><span class="glyphicon glyphicon-user"></span> Đăng ký</a></li>
-                            <li class="divider"></li>
-                            <li><a href="log-in.html"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#"><span class="glyphicon glyphicon-calendar"></span> Đặt Lịch</a></li>
-                </ul>
-            </div>
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar1"
+            aria-expanded="false"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><b>Luxury Car</b></a>
         </div>
+        <div class="collapse navbar-collapse" id="navbar1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Trang chủ</a></li>
+            <li><a href="gioithieu.html">Giới Thiệu</a></li>
+            <li><a href="lienhe.html">Liên hệ</a></li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+                >Toyota <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">SUV</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Sedan</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Pickup</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+                >Ford <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">SUV</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Thương mại</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+                >VinFast <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Động cơ xăng</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Động cơ điện</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+                >Người dùng <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="sign-up.html"
+                    ><span class="glyphicon glyphicon-user"></span> Đăng ký</a
+                  >
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="log-in.html"
+                    ><span class="glyphicon glyphicon-log-in"></span> Đăng
+                    nhập</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                ><span class="glyphicon glyphicon-calendar"></span> Đặt Lịch</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div id="carousel1" class="carousel slide" data-slide="carousel" data-interval="2000">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel1" data-slide-to="1" class=""></li>
-                        <li data-target="#carousel1" data-slide-to="2" class=""></li>
-                        <li data-target="#carousel1" data-slide-to="3" class=""></li>
-                        <li data-target="#carousel1" data-slide-to="4" class=""></li>
-                        <li data-target="#carousel1" data-slide-to="5" class=""></li>
-                    </ol>
-                    <div class="carousel-inner" id="slide1">
-                        <div class="item active"><img class="img-responsive" src="Images/bwm1.png" alt="thumb"></div>
-                        <div class="item"><img src="Images/mer1920x600.png" alt="thumb" class="img-responsive"></div>
-                        <div class="item"><img src="Images/Audi_1920x600.png" alt="thumb" class="img-responsive"></div>
-                        <div class="item"><img src="Images/Honda_1920x600.png" alt="thumb" class="img-responsive"></div>
-                        <div class="item"><img src="Images/HondaNSX_1920x600.png" alt="thumb" class="img-responsive"></div>
-                        <div class="item"><img src="Images/GreenMer_1920x600.png" alt="thumb" class="img-responsive"></div>
-                    </div>
-                </div>
-                <a class="left carousel-control" href="#carousel1" data-slide="prev"><span class="icon-prev"></span></a>
-                <a class="right carousel-control" href="#carousel1" data-slide="next"><span class="icon-next"></span></a>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div
+            id="carousel1"
+            class="carousel slide"
+            data-slide="carousel"
+            data-interval="2000"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carousel1"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#carousel1" data-slide-to="1" class=""></li>
+              <li data-target="#carousel1" data-slide-to="2" class=""></li>
+              <li data-target="#carousel1" data-slide-to="3" class=""></li>
+              <li data-target="#carousel1" data-slide-to="4" class=""></li>
+              <li data-target="#carousel1" data-slide-to="5" class=""></li>
+            </ol>
+            <div class="carousel-inner" id="slide1">
+              <div class="item active">
+                <img class="img-responsive" src="Images/bwm1.png" alt="thumb" />
+              </div>
+              <div class="item">
+                <img
+                  src="Images/mer1920x600.png"
+                  alt="thumb"
+                  class="img-responsive"
+                />
+              </div>
+              <div class="item">
+                <img
+                  src="Images/Audi_1920x600.png"
+                  alt="thumb"
+                  class="img-responsive"
+                />
+              </div>
+              <div class="item">
+                <img
+                  src="Images/Honda_1920x600.png"
+                  alt="thumb"
+                  class="img-responsive"
+                />
+              </div>
+              <div class="item">
+                <img
+                  src="Images/HondaNSX_1920x600.png"
+                  alt="thumb"
+                  class="img-responsive"
+                />
+              </div>
+              <div class="item">
+                <img
+                  src="Images/GreenMer_1920x600.png"
+                  alt="thumb"
+                  class="img-responsive"
+                />
+              </div>
             </div>
+          </div>
+          <a class="left carousel-control" href="#carousel1" data-slide="prev"
+            ><span class="icon-prev"></span
+          ></a>
+          <a class="right carousel-control" href="#carousel1" data-slide="next"
+            ><span class="icon-next"></span
+          ></a>
         </div>
+      </div>
     </div>
 
-   <div class="container">
-  <div class="row">
-    <!-- Bên trái -->
-    <div class="col-md-8 left-content">
-      <h2><b>Đăng ký lái thử các hãng xe tại LuxCar</b></h2>
-      <p>Lái thử và cảm nhận các dòng xe tại Đại lý LuxCar Bình Dương...</p>
-      <ul>
-        <li>Xem xe, lái thử và hỗ trợ làm thủ tục mua xe, mua xe trả góp tại nhà.</li>
-        <li>Gói vay ưu đãi từ LuxCar, hỗ trợ 3% lãi suất trả góp trong 3 năm đầu.</li>
-        <li>Lái thử miễn phí và nhận ngay quà tặng từ LuxCar.</li>
-      </ul>
-      <hr>
-        <p><i class="glyphicon glyphicon-earphone"></i> Hotline kinh doanh: <a href="tel:0900090090">0900 090 090</a></p>
-        <p><i class="glyphicon glyphicon-globe"></i> Website: luxurycar.com</p>
-        <p><i class="glyphicon glyphicon-map-marker"></i> Showroom 1: 123 Lê Lợi, TP. HCM</p>
-        <p><i class="glyphicon glyphicon-envelope"></i> support@luxurycar.vn</p> <hr>
+    <div class="container">
+      <div class="row">
+        <!-- Bên trái -->
+        <div class="col-md-8 left-content">
+          <h2><b>Đăng ký lái thử các hãng xe tại LuxCar</b></h2>
+          <p>Lái thử và cảm nhận các dòng xe tại Đại lý LuxCar Bình Dương...</p>
+          <ul>
+            <li>
+              Xem xe, lái thử và hỗ trợ làm thủ tục mua xe, mua xe trả góp tại
+              nhà.
+            </li>
+            <li>
+              Gói vay ưu đãi từ LuxCar, hỗ trợ 3% lãi suất trả góp trong 3 năm
+              đầu.
+            </li>
+            <li>Lái thử miễn phí và nhận ngay quà tặng từ LuxCar.</li>
+          </ul>
+          <hr />
+          <p>
+            <i class="glyphicon glyphicon-earphone"></i> Hotline kinh doanh:
+            <a href="tel:0900090090">0900 090 090</a>
+          </p>
+          <p>
+            <i class="glyphicon glyphicon-globe"></i> Website: luxurycar.com
+          </p>
+          <p>
+            <i class="glyphicon glyphicon-map-marker"></i> Showroom 1: 123 Lê
+            Lợi, TP. HCM
+          </p>
+          <p>
+            <i class="glyphicon glyphicon-envelope"></i> support@luxurycar.vn
+          </p>
+          <hr />
 
-        <h3><b>Đăng ký lái thử xe LuxCar tháng 09/2025</b></h3>
-        <p>
-            Vui lòng để lại thông tin bên dưới, Đại lý LuxCar Bình Dương sẽ xác nhận đăng ký và phản hồi trong thời gian sớm nhất..!
-        </p>
+          <h3><b>Đăng ký lái thử xe LuxCar tháng 09/2025</b></h3>
+          <p>
+            Vui lòng để lại thông tin bên dưới, Đại lý LuxCar Bình Dương sẽ xác
+            nhận đăng ký và phản hồi trong thời gian sớm nhất..!
+          </p>
 
-        <form class="testdrive-form">
+          <form class="testdrive-form">
             <div class="row">
-            <div class="col-sm-4">
+              <div class="col-sm-4">
                 <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                <input type="text" class="form-control" placeholder="Họ & Tên *">
+                  <span class="input-group-addon"
+                    ><i class="glyphicon glyphicon-user"></i
+                  ></span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Họ & Tên *"
+                  />
                 </div>
-            </div>
-            <div class="col-sm-4">
+              </div>
+              <div class="col-sm-4">
                 <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                <input type="text" class="form-control" placeholder="Số điện thoại *">
+                  <span class="input-group-addon"
+                    ><i class="glyphicon glyphicon-earphone"></i
+                  ></span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Số điện thoại *"
+                  />
                 </div>
-            </div>
-            <div class="col-sm-4">
+              </div>
+              <div class="col-sm-4">
                 <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                <select class="form-control">
+                  <span class="input-group-addon"
+                    ><i class="glyphicon glyphicon-home"></i
+                  ></span>
+                  <select class="form-control">
                     <option>Tỉnh/ Thành phố</option>
                     <option>Hà Nội</option>
                     <option>Hồ Chí Minh</option>
                     <option>Bình Dương</option>
-                </select>
+                  </select>
                 </div>
-            </div>
+              </div>
             </div>
 
             <div class="row">
-            <div class="col-sm-4">
+              <div class="col-sm-4">
                 <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-road"></i></span>
-                <select class="form-control">
+                  <span class="input-group-addon"
+                    ><i class="glyphicon glyphicon-road"></i
+                  ></span>
+                  <select class="form-control">
                     <option>Dòng xe lái thử</option>
                     <option>VinFast VF6</option>
                     <option>VinFast VF7</option>
@@ -157,266 +283,314 @@
                     <option>VinFast VF9</option>
                     <option>Toyota</option>
                     <option>Ford</option>
-                </select>
+                  </select>
                 </div>
-            </div>
-            <div class="col-sm-4">
+              </div>
+              <div class="col-sm-4">
                 <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                <input type="date" class="form-control">
+                  <span class="input-group-addon"
+                    ><i class="glyphicon glyphicon-calendar"></i
+                  ></span>
+                  <input type="date" class="form-control" />
                 </div>
-            </div>
-            <div class="col-sm-4">
+              </div>
+              <div class="col-sm-4">
                 <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
-                <select class="form-control">
+                  <span class="input-group-addon"
+                    ><i class="glyphicon glyphicon-time"></i
+                  ></span>
+                  <select class="form-control">
                     <option>Buổi sáng</option>
                     <option>Buổi chiều</option>
-                </select>
+                  </select>
                 </div>
-            </div>
+              </div>
             </div>
 
             <button type="submit" class="btn btn-primary btn-submit">
-             Đăng ký lái thử
+              Đăng ký lái thử
             </button>
-        </form>
-    </div>
+          </form>
+        </div>
 
-    <!-- Bên phải -->
-    <div class="col-md-4 right-sidebar">
-      <div class="luxcar-box sticky-sidebar">
-        <!-- Banner -->
-        <img src="Images/banner_dat_lich.jpg" class="img-responsive" alt="LuxCar Banner">
+        <!-- Bên phải -->
+        <div class="col-md-4 right-sidebar">
+          <div class="luxcar-box sticky-sidebar">
+            <!-- Banner -->
+            <img
+              src="Images/banner_dat_lich.jpg"
+              class="img-responsive"
+              alt="LuxCar Banner"
+            />
 
-        <p class="text-center" style="margin-top:10px;">
-          Nhận bảng giá lăn bánh LuxCar chi tiết mới nhất tháng 09/2025 ngay..!
-        </p>
+            <p class="text-center" style="margin-top: 10px">
+              Nhận bảng giá lăn bánh LuxCar chi tiết mới nhất tháng 09/2025
+              ngay..!
+            </p>
 
-        <form>
-          <!-- Họ & Tên -->
-          <div class="input-group" style="margin-bottom:10px;">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-            <input type="text" class="form-control" placeholder="Họ & Tên *">
+            <form>
+              <!-- Họ & Tên -->
+              <div class="input-group" style="margin-bottom: 10px">
+                <span class="input-group-addon"
+                  ><i class="glyphicon glyphicon-user"></i
+                ></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Họ & Tên *"
+                />
+              </div>
+
+              <!-- Số điện thoại -->
+              <div class="input-group" style="margin-bottom: 10px">
+                <span class="input-group-addon"
+                  ><i class="glyphicon glyphicon-earphone"></i
+                ></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Số điện thoại *"
+                />
+              </div>
+
+              <!-- Tỉnh/Thành phố -->
+              <div class="input-group" style="margin-bottom: 10px">
+                <span class="input-group-addon"
+                  ><i class="glyphicon glyphicon-home"></i
+                ></span>
+                <select class="form-control">
+                  <option>Tỉnh/ Thành Phố</option>
+                  <option>Hà Nội</option>
+                  <option>Hồ Chí Minh</option>
+                  <option>Bình Dương</option>
+                </select>
+              </div>
+
+              <!-- Dòng xe -->
+              <div class="input-group" style="margin-bottom: 10px">
+                <span class="input-group-addon"
+                  ><i class="glyphicon glyphicon-road"></i
+                ></span>
+                <select class="form-control">
+                  <option>Dòng xe đang quan tâm</option>
+                  <option>VinFast VF6</option>
+                  <option>VinFast VF7</option>
+                  <option>VinFast VF8</option>
+                  <option>VinFast VF9</option>
+                  <option>Toyota</option>
+                  <option>Ford</option>
+                </select>
+              </div>
+
+              <!-- Trả góp -->
+              <div class="input-group" style="margin-bottom: 15px">
+                <span class="input-group-addon"
+                  ><i class="glyphicon glyphicon-credit-card"></i
+                ></span>
+                <select class="form-control">
+                  <option>Trả thẳng/ Trả góp</option>
+                  <option>Trả thẳng</option>
+                  <option>Trả góp</option>
+                </select>
+              </div>
+
+              <!-- Nút -->
+              <button
+                type="submit"
+                class="btn btn-primary btn-block"
+                style="font-weight: bold; border-radius: 25px"
+              >
+                <i class="glyphicon glyphicon-send"></i> Nhận báo giá
+              </button>
+            </form>
           </div>
-
-          <!-- Số điện thoại -->
-          <div class="input-group" style="margin-bottom:10px;">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-            <input type="text" class="form-control" placeholder="Số điện thoại *">
-          </div>
-
-          <!-- Tỉnh/Thành phố -->
-          <div class="input-group" style="margin-bottom:10px;">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-            <select class="form-control">
-              <option>Tỉnh/ Thành Phố</option>
-              <option>Hà Nội</option>
-              <option>Hồ Chí Minh</option>
-              <option>Bình Dương</option>
-            </select>
-          </div>
-
-          <!-- Dòng xe -->
-          <div class="input-group" style="margin-bottom:10px;">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-road"></i></span>
-            <select class="form-control">
-              <option>Dòng xe đang quan tâm</option>
-              <option>VinFast VF6</option>
-              <option>VinFast VF7</option>
-              <option>VinFast VF8</option>
-              <option>VinFast VF9</option>
-              <option>Toyota</option>
-              <option>Ford</option>
-            </select>
-          </div>
-
-          <!-- Trả góp -->
-          <div class="input-group" style="margin-bottom:15px;">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-credit-card"></i></span>
-            <select class="form-control">
-              <option>Trả thẳng/ Trả góp</option>
-              <option>Trả thẳng</option>
-              <option>Trả góp</option>
-            </select>
-          </div>
-
-          <!-- Nút -->
-          <button type="submit" class="btn btn-primary btn-block" style="font-weight:bold; border-radius:25px;">
-            <i class="glyphicon glyphicon-send"></i> Nhận báo giá
-          </button>
-        </form>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
-
-    <footer class=" footer-dark">
-        <div class="container">
-            <div class="row top-info">
-            <div class="col-md-3 col-sm-6">
-                <p><i class="glyphicon glyphicon-earphone"></i> Hotline (24/7): <span>0900 090 090</span></p>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <p><i class="glyphicon glyphicon-comment"></i> Khiếu nại, phản hồi: <span>0900 090 090</span></p>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <p><i class="glyphicon glyphicon-envelope"></i> Hợp tác: <span>info@luxurycar.vn</span></p>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <p><i class="glyphicon glyphicon-user"></i> Hỗ trợ KH: <span>support@luxurycar.vn</span></p>
-            </div>
-            </div>
-
-            <hr>
-
-            <div class="row">
-            <!-- Cột 1 -->
-            <div class="col-md-3 col-sm-6">
-                <h4>Luxury Car</h4>
-                <p><i class="glyphicon glyphicon-map-marker"></i> 123 Lê Lợi, TP HCM</p>
-                <p><i class="glyphicon glyphicon-earphone"></i> 0123 456 789</p>
-                <p><i class="glyphicon glyphicon-envelope"></i> support@luxurycar.vn</p>
-            </div>
-
-            <!-- Cột 2 -->
-            <div class="col-md-3 col-sm-6">
-                <h4>Mua hàng</h4>
-                <ul class="footer-links">
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="#">Giới thiệu</a></li>
-                <li><a href="#">Sản phẩm</a></li>
-                <li><a href="#">Liên hệ</a></li>
-                <li><a href="#">Tin tức</a></li>
-                </ul>
-            </div>
-
-            <!-- Cột 3 -->
-            <div class="col-md-3 col-sm-6">
-                <h4>Dịch vụ khách hàng</h4>
-                <ul class="footer-links">
-                <li><a href="#">Bảo hành</a></li>
-                <li><a href="#">Hướng dẫn mua</a></li>
-                <li><a href="#">Chính sách đổi trả</a></li>
-                <li><a href="#">Thanh toán</a></li>
-                <li><a href="#">Vận chuyển</a></li>
-                </ul>
-            </div>
-
-            <!-- Cột 4 -->
-            <div class="col-md-3 col-sm-6">
-                <h4>Đăng ký nhận tin</h4>
-                <p>Nhận thông tin sản phẩm mới nhất, tin khuyến mãi và nhiều hơn nữa.</p>
-                <form class="newsletter">
-                <input type="email" placeholder="Email của bạn">
-                <button type="submit">Đăng ký</button>
-                </form>
-                <div class="payment-icons">
-                <img src="https://img.icons8.com/color/36/visa.png"/>
-                <img src="https://img.icons8.com/color/36/mastercard.png"/>
-                <img src="https://img.icons8.com/color/36/amex.png"/>
-                <img src="https://img.icons8.com/color/36/bitcoin.png"/>
-                </div>
-            </div>
-            </div>
-
-            <hr>
-            <div class="text-center">
-            <p>&copy; 2025 Luxury Car. All rights reserved.</p>
-            </div>
+    <footer class="footer-dark">
+      <div class="container">
+        <div class="row top-info">
+          <div class="col-md-3 col-sm-6">
+            <p>
+              <i class="glyphicon glyphicon-earphone"></i> Hotline (24/7):
+              <span>0900 090 090</span>
+            </p>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <p>
+              <i class="glyphicon glyphicon-comment"></i> Khiếu nại, phản hồi:
+              <span>0900 090 090</span>
+            </p>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <p>
+              <i class="glyphicon glyphicon-envelope"></i> Hợp tác:
+              <span>info@luxurycar.vn</span>
+            </p>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <p>
+              <i class="glyphicon glyphicon-user"></i> Hỗ trợ KH:
+              <span>support@luxurycar.vn</span>
+            </p>
+          </div>
         </div>
+
+        <hr />
+
+        <div class="row">
+          <!-- Cột 1 -->
+          <div class="col-md-3 col-sm-6">
+            <h4>Luxury Car</h4>
+            <p>
+              <i class="glyphicon glyphicon-map-marker"></i> 123 Lê Lợi, TP HCM
+            </p>
+            <p><i class="glyphicon glyphicon-earphone"></i> 0123 456 789</p>
+            <p>
+              <i class="glyphicon glyphicon-envelope"></i> support@luxurycar.vn
+            </p>
+          </div>
+
+          <!-- Cột 2 -->
+          <div class="col-md-3 col-sm-6">
+            <h4>Mua hàng</h4>
+            <ul class="footer-links">
+              <li><a href="#">Trang chủ</a></li>
+              <li><a href="#">Giới thiệu</a></li>
+              <li><a href="#">Sản phẩm</a></li>
+              <li><a href="#">Liên hệ</a></li>
+              <li><a href="#">Tin tức</a></li>
+            </ul>
+          </div>
+
+          <!-- Cột 3 -->
+          <div class="col-md-3 col-sm-6">
+            <h4>Dịch vụ khách hàng</h4>
+            <ul class="footer-links">
+              <li><a href="#">Bảo hành</a></li>
+              <li><a href="#">Hướng dẫn mua</a></li>
+              <li><a href="#">Chính sách đổi trả</a></li>
+              <li><a href="#">Thanh toán</a></li>
+              <li><a href="#">Vận chuyển</a></li>
+            </ul>
+          </div>
+
+          <!-- Cột 4 -->
+          <div class="col-md-3 col-sm-6">
+            <h4>Đăng ký nhận tin</h4>
+            <p>
+              Nhận thông tin sản phẩm mới nhất, tin khuyến mãi và nhiều hơn nữa.
+            </p>
+            <form class="newsletter">
+              <input type="email" placeholder="Email của bạn" />
+              <button type="submit">Đăng ký</button>
+            </form>
+            <div class="payment-icons">
+              <img src="https://img.icons8.com/color/36/visa.png" />
+              <img src="https://img.icons8.com/color/36/mastercard.png" />
+              <img src="https://img.icons8.com/color/36/amex.png" />
+              <img src="https://img.icons8.com/color/36/bitcoin.png" />
+            </div>
+          </div>
+        </div>
+
+        <hr />
+        <div class="text-center">
+          <p>&copy; 2025 Luxury Car. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <script>
-        function filterSelection(category) {
-            var items = document.getElementsByClassName("filter-item");
-            if (category === "all") category = "";
-            for (var i = 0; i < items.length; i++) {
-                items[i].style.display = items[i].className.indexOf(category) > -1 ? "block" : "none";
-            }
+      function filterSelection(category) {
+        var items = document.getElementsByClassName("filter-item");
+        if (category === "all") category = "";
+        for (var i = 0; i < items.length; i++) {
+          items[i].style.display =
+            items[i].className.indexOf(category) > -1 ? "block" : "none";
         }
+      }
     </script>
 
     <style>
-        .luxcar-box {
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            padding: 20px;
-            background: #fff;
-        }
+      .luxcar-box {
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        background: #fff;
+      }
 
-        .luxcar-box img {
-            border-radius: 10px;
-            max-height: 180px;
-            object-fit: cover;
-            margin-bottom: 15px;
-        }
-        .col-md-8 i{
-            color:blue;
-        }
-        /* Ngăn cách giữa bên trái và bên phải */
+      .luxcar-box img {
+        border-radius: 10px;
+        max-height: 180px;
+        object-fit: cover;
+        margin-bottom: 15px;
+      }
+      .col-md-8 i {
+        color: blue;
+      }
+      /* Ngăn cách giữa bên trái và bên phải */
+      .left-content {
+        border-right: 2px dashed #ccc; /* gạch ngăn cách */
+        padding-right: 20px; /* tạo khoảng cách */
+      }
+
+      .right-sidebar {
+        padding-left: 20px; /* khoảng cách so với border */
+      }
+
+      /* Responsive: bỏ đường ngăn cách trên mobile */
+      @media (max-width: 767px) {
         .left-content {
-        border-right: 2px dashed #ccc;   /* gạch ngăn cách */
-        padding-right: 20px;             /* tạo khoảng cách */
+          border-right: none;
+          padding-right: 0;
         }
-
         .right-sidebar {
-        padding-left: 20px;              /* khoảng cách so với border */
+          padding-left: 0;
         }
+      }
+      .sticky-sidebar {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 20px; /* cách mép trên khi cuộn */
+      }
 
-        /* Responsive: bỏ đường ngăn cách trên mobile */
-        @media (max-width: 767px) {
-            .left-content {
-                border-right: none;
-                padding-right: 0;
-            }
-            .right-sidebar {
-                padding-left: 0;
-            }
-        }
-        .sticky-sidebar {
-            position: -webkit-sticky;
-            position: sticky;
-            top: 20px; /* cách mép trên khi cuộn */
-        }
+      /* Form đăng ký lái thử */
+      .testdrive-form .row {
+        margin-bottom: 15px;
+      }
 
-        /* Form đăng ký lái thử */
-        .testdrive-form .row {
-            margin-bottom: 15px;
-        }
+      .testdrive-form .input-group-addon {
+        background: #fff;
+        border-right: none;
+      }
 
-        .testdrive-form .input-group-addon {
-            background: #fff;
-            border-right: none;
-        }
+      .testdrive-form .form-control {
+        border-left: none;
+        box-shadow: none;
+        border-radius: 25px;
+      }
 
-        .testdrive-form .form-control {
-            border-left: none;
-            box-shadow: none;
-            border-radius: 25px;
-        }
+      .testdrive-form .input-group {
+        border: 1px solid #ddd;
+        border-radius: 25px;
+        overflow: hidden;
+      }
 
-        .testdrive-form .input-group {
-            border: 1px solid #ddd;
-            border-radius: 25px;
-            overflow: hidden;
-        }
+      .testdrive-form .btn-submit {
+        display: inline-block;
+        background: #0066ff;
+        border: none;
+        border-radius: 25px;
+        padding: 10px 25px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
 
-        .testdrive-form .btn-submit {
-            display: inline-block;
-            background: #0066ff;
-            border: none;
-            border-radius: 25px;
-            padding: 10px 25px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-        }
-
-        .testdrive-form .btn-submit:hover {
-            background: #a50909d6;
-        }
-
+      .testdrive-form .btn-submit:hover {
+        background: #a50909d6;
+      }
     </style>
-</body>
+  </body>
 </html>

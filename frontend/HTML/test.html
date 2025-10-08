@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh sách xe</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: #f5f5f5;
+        font-family: "Segoe UI", sans-serif;
+      }
+      .flipper {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.2s ease;
+      }
+      .flipper:hover {
+        transform: translateY(-5px);
+      }
+      .b-goods__img img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+      }
+      .b-goods__inner {
+        padding: 10px 15px;
+      }
+      .b-goods__name a {
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+        text-decoration: none;
+      }
+      .b-goods__price .new-price {
+        color: #d0021b;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .b-goods-descr {
+        display: flex;
+        gap: 15px;
+        padding: 0;
+        margin: 10px 0 0 0;
+      }
+      .b-goods-descr__item {
+        list-style: none;
+        text-align: center;
+      }
+      .tag_icon img {
+        width: 24px;
+        height: 24px;
+      }
+      .tag_icon figcaption {
+        font-size: 13px;
+        margin-top: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h2 class="text-center mb-4">🚗 Danh sách xe</h2>
+      <div class="row" id="cars-container">
+        <!-- Dữ liệu xe sẽ được render ở đây -->
+      </div>
+    </div>
+
+    <script>
+      async function loadCars() {
+        try {
+          const res = await fetch("http://localhost:8000/api/cars");
+          const cars = await res.json();
+
+          const container = document.getElementById("cars-container");
+          container.innerHTML = "";
+
+          cars.forEach((car) => {
+            const html = `
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6 mb-4">
+              <div class="flipper">
+                <div class="flip__front">
+                  <div class="b-goods__img">
+                    <a href="#" title="${car.TenXe}">
+                      <img src="${car.AnhXe}" alt="${car.TenXe}">
+                    </a>
+                  </div>
+                  <div class="b-goods__inner">
+                    <div class="b-goods__name">
+                      <a href="#">${car.TenXe}</a>
+                    </div>
+                    <hr>
+                    <div class="b-goods__footer">
+                      <div class="b-goods__price">
+                        <span class="new-price">${car.GiaXe.toLocaleString(
+                          "vi-VN"
+                        )}₫</span>
+                      </div>
+                      <ul class="b-goods-descr list-unstyled">
+                        <li class="b-goods-descr__item">
+                          <figure class="tag_icon">
+                            <img src="../Images/tag_icon_1.svg" alt="Năm sản xuất">
+                            <figcaption>${car.NamSanXuat}</figcaption>
+                          </figure>
+                        </li>
+                        <li class="b-goods-descr__item">
+                          <figure class="tag_icon">
+                            <img src="../Images/tag_icon_2.svg" alt="Số chỗ">
+                            <figcaption>${car.SoCho} chỗ</figcaption>
+                          </figure>
+                        </li>
+                        <li class="b-goods-descr__item">
+                          <figure class="tag_icon">
+                            <img src="../Images/tag_icon_3.svg" alt="Hộp số">
+                            <figcaption>${car.HopSo}</figcaption>
+                          </figure>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+            container.innerHTML += html;
+          });
+        } catch (err) {
+          console.error("Lỗi khi load dữ liệu:", err);
+        }
+      }
+
+      loadCars();
+    </script>
+  </body>
+</html>
